@@ -1,0 +1,33 @@
+<html>
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+     <title>ArcGIS JavaScrip App</title>
+     <script src="https://js.arcgis.com/3.27/"></script>
+     <link rel="stylesheet" href="https://js.arcgis.com/3.27/esri/css/esri.css">
+<!--load the source of javascript library and GIS css file.
+add a webpage to our website
+-->
+     <script>
+         var map;
+     require(["esri/map", "dojo/domReady!"], function(Map){
+             map = new Map("map",{
+                 basemap:"topo",
+                 center:[-79.504818,43.771938],
+                 zoom:13
+             });
+         })
+ //code to create the map and add a basemap will go here
+
+     </script>
+    
+  <style>
+         html,body,#map{ height:100%; padding:80; margin:80;}
+     </style>
+ </head>
+ 
+ <body class="claro"> 
+      <div id="map"></div>
+ </body>
+ 
+ </html>

@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>Resume Webpage</title>  <!-- Name the webpage  -->
+		<style>
+			h1{
+				color:5883AD;
+				background-color: #B4B2B2;
+				width:540px;
+				font size：10；
+				font-family:georgia;}
+			    /*	Style h1: change color, background-color and font-family of h1			*/
+			p{
+				color:black;
+				font-family:cursive;}
+			    /* Style p: define color and font-family of each paragraph			*/
+			span{
+			 color:black;
+			 font-family:cursive;}
+			   /*	Style span: define color and font-family of words		*/
+
+			a:link{color:5883AD;}
+			a:visited{color:purple;}
+			a:hover{color:red;}
+             /*chage the color of the link:
+			   If link is not clicked, color is blue;
+			   If link is visited, color is purple;
+			   If link is hovered, color is green */
+			img{
+				width:300px;
+				height:310px;
+				position:absolute;right:770px;bottom:350px;}
+			    /*	Style image: define width, height and position of image		*/
+	
+		</style>		
+	</head>
+	      <style> /*set a background image for the webpage */
+            .demo{
+                position:fixed;
+                top: 0;
+                left: 0;
+                width:100%;
+                height:100%;
+                min-width: 1000px;
+                z-index:-10;
+                zoom: 1;
+                background-color: #fff;
+                background: url(background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                background-position: center 0;
+            }
+        </style>
+	<body>
+	        <div class="demo"></div> <!-- Add a a background image for the webpage -->
+			<h2><font size="6" >RESUME</font></h2>
+			<section> <!-- Seperate content to five sections -->
+				<h1>Personal Information</h1> <!-- <h1>is used to add head to each section -->
+				<p>Name: Qian Li  <br>  Phone Number:647-4927126 <br/>   This is 
+				<a href="https://www.facebook.com/"target="blank"><font color=5883AD><b>My Facebook Homepage.</b></font></a>
+				<!--  <a href="">is used to add a link in this webpage-->
+			 </section>
+			
+			 <section>
+				<h1>Education</h1>				
+				<!--<table>is used to add a table, 'border' decides width of border, 'cellspacing' decides space of each cell
+				each <tr> corresponds to one line, each <th> corresponds to one head-->
+				<table border = 1  width = 540px height = 30px cellspacing = 0px cellpadding = 10px>   
+      	             <tr height = 30px align = left>   
+      	               <th><p><font color= 5883AD>Sep.2007 to Jul.2011</font><p></th> <th><p><font color= 5883AD>Bachelor of Engineering:Civil Engineering</font></p></th>  
+                     </tr>
+                     <tr height = 30px align = left>    
+                         <td ><p>Southwest Petroleum University</p></td>  <td><p>Chengdu China</p></td> 
+                     </tr>
+                 </table> 
+			 </section>
+			
+			 <section>
+				<h1>Employment Experience</h1> 
+				<table border = 1  width = 540px height = 30px cellspacing = 0px cellpadding = 10px>   
+      	             <tr height = 30px align = left>   
+      	               <th><p>Jul.2011-Jan.2017<p></th>  
+                     </tr>
+                     <tr height = 30px align = left>    
+                         <td ><p>Worked as a Assistant Engineer in Sinopec Petroleum Engineering & Construction Corporation</p></td> 
+                     </tr>
+		
+                 </table> 
+			 </section>
+			
+			 <section>
+				<h1>Hobbies</h1> 
+			 <div>
+			     <div>
+		    	     <span>***Reading</span><br>
+                     <span>***Jogging</span><br>
+                     <span>***Cooking</span><br>
+                 </div>
+			 </div>
+				
+			 </section>
+			 
+			 <section>
+				<h1>Contact</h1>
+				<p>Please Scan QR Codes on the right!</p>
+				     <img  src="QR_codes.png" /> <!--  <img> is used to add image to webpage   -->
+				
+			</section>		
+			
+	</body>
+</html>

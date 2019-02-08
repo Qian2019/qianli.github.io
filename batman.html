@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Course Information Webpage</title>  <!-- Name the webpage  -->
+		<style>
+			h1{
+				color:maroon;
+				background-color: #B4B2B2;
+				width:540px;
+				font-family:georgia;}
+			    /*	Style h1: change color, background-color and font-family of h1			*/
+			p{
+				color:black;
+				font-family:Arial;}
+			    /* Style p: define color and font-family of each paragraph			*/
+			span{
+			 color:black;
+			 font-family:cursive;}
+			   /*	Style span: define color and font-family of words		*/
+
+			a:link{color:5883AD;}
+			a:visited{color:purple;}
+			a:hover{color:red;}
+             /*chage the color of the link:
+			   If link is not clicked, color is blue;
+			   If link is visited, color is purple;
+			   If link is hovered, color is green */
+			img{
+				width:400px;
+				height:410px;
+				position:absolute;right:650px;bottom:200px;}
+			    /*	Style image: define width, height and position of image		*/
+	
+		</style>
+		<script>
+			function submitInfo()
+			 {
+				var value1=document.getElementById('name').value;
+				var value2=document.getElementById('email').value;
+			
+				alert('You have submitted successfully!');
+			 }
+			/*
+			Function submitInfo:
+			submit:Name and Email
+			Output: Alert 'You have submitted successfully!'
+			*/
+		</script>
+		
+	</head>
+		<body>
+			<h2><font size="6" face="Arial">Batman</font></h2>
+			<section> <!-- Seperate content to four sections -->
+				<h1>About</h1> <!-- <h1>is used to add head to each section -->
+				<p>Bla bla!</p> <!-- <p>is used to add content to each section -->
+				<p>Hi,I'm Batman. I love 
+				<a href="http://www.yorku.ca/gradess/courses.ht"target="blank"><font color=5883AD><b>GS/ESS 5400 GIS and Advanced Spatial Analysis.</b></font></a>
+				<!--  <a href="">is used to add a link in this webpage-->
+			 </section>
+			
+			 <section>
+				<h1>Course</h1>
+				<p>Here are some courses I've taken.</p>
+				<img  src="GIS_course.jpg" /> <!--  <img> is used to add image to website   -->
+				<!--<table>is used to add a table, 'border' decides width of border, 'cellspacing' decides space of each cell
+				each <tr> corresponds to one line, each <th> corresponds to one head-->
+				<table border = 1  width = 540px height = 30px cellspacing = 0px cellpadding = 10px>   
+      	             <tr height = 30px align = center>   
+      	               <th><p><b>Course Number</b><p></th> <th><p><b>Course Title</b></p></th>  <th><p><b>Semester Taken</b></p></th>
+      	             </tr>
+      	             <tr height = 30px align = center>  
+      	               <td colspan = 3 ><p><b>For Credit</b></p></td>
+                     </tr>
+                     <tr height = 30px align = left>    
+                        <td bgcolor=#B4B2B2><p><font color = green>6.813</font></p></td><td bgcolor=#B4B2B2><p><font color = green>GS/ESS 5400 GIS and Advanced Spatial Analysis</td></p><td bgcolor=#B4B2B2><p><font color = green>Winter 2019</p></td>   
+                     </tr>
+                     <tr height = 30px align = left>    
+                       <td ><p><font color = 5883AD>6.034</font></p></td><td><p>Artificial Intelligence</p></td><td><p>Fall 2013</p></td> 
+                     </tr>
+                     <tr height = 30px align = left>    
+                      <td bgcolor=#B4B2B2><p><font color = 5883AD>6.006</font></p></td><td bgcolor=#B4B2B2><p>Introduction to Algorithms</p></td><td bgcolor=#B4B2B2><p>Fall 2013</p></td> 
+                     </tr>
+                     <tr height = 30px align = center>  
+      	               <td colspan = 5 color = black><p><b>Listener</b></p></td>
+                     </tr>
+                     <tr height = 30px align = left>    
+                         <td bgcolor=#B4B2B2><p><font color = 5883AD>6.867</font></p></td><td bgcolor=#B4B2B2><p>Machine Learning</p></td><td bgcolor=#B4B2B2><p>Fall 2013</p></td> 
+                     </tr>
+                     <tr height = 30px align = left>    
+                         <td ><p><font color = 5883AD>6.830</font></p></td><td><p>Database Systems</p></td><td><p>Fall 2012</p></td> 
+                     </tr>
+		
+                 </table> 
+			 </section>
+			
+			 <section>
+				<h1>Interests</h1> 
+				<p> I am interested in <span>reading,listening to music, jogging and Youtube videos.</span></p>
+				<!--span is used to change the font of some words-->
+			 </section>
+			
+			 <section>
+				<h1>Subscribe to newsletter</h1>
+				<p>Would love to recieve newsletter. Submit Below!</p>
+				     <!--<form>is used to add a form, 'get' means get input value of textbox. Each <div> means one row.
+				     <lable> is used to add lable to textbox, <input> is used to input different tools such as textbox, button.-->
+				<form action="" method="get" class="form-example">
+					<div class="form-example">
+						<label for="name"><font fantasy>Name</font></label>
+						<input type="text" id="name" > 
+					</div>
+					
+					<div class="form-example">
+						<label for="email">Email</label>
+						<input type="email" id="email" >
+					</div>
+					
+					<div>
+						<input type="button" value="Submit" onclick="submitInfo()">
+					</div>
+					
+				</form>
+				
+			</section>		
+			
+		</body>
+</html>
