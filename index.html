@@ -1,28 +1,6 @@
 <html>
 	<head>
-		<title>Homepage</title>  <!-- Name the webpage  -->
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-     <script src="https://js.arcgis.com/3.27/"></script>
-     <link rel="stylesheet" href="https://js.arcgis.com/3.27/esri/css/esri.css">
-<!--load the source of javascript library and GIS css file.
-add a webpage to the website-->
-     <script>
-         var map;
-     require(["esri/map", "dojo/domReady!"], function(Map){
-             map = new Map("map",{
-                 basemap:"topo",
-                 center:[-79.504818,43.771938],
-                 zoom:13
-             });
-         })
- //code to create the map and add a basemap will go here
-
-     </script>
-    
-     <style>
-         html,body,#map{ height:100%; padding:30; margin:30;}
-     </style>
+		<title>Homepage</title>  <!-- Name the webpage  --> 
  </head>
  <style> /*set a background image for the webpage */
             .demo{
@@ -44,9 +22,11 @@ add a webpage to the website-->
             }
         </style>
  
- <body class="claro"> 
-      <font size=20 color= white>GS/ESS 5400 GIS and Advanced Spatial Analysis Lab2 </font>
-	  <div id="map"></div>
+ <body> 
+      <font size=20 color= white>Homepage </font> <br>
+	  <br>
+	  <br>
+	  <font size=20 color= white>GS/ESS 5400 GIS and Advanced Spatial Analysis Lab2 </font>
 	  <div class="demo"></div> <!-- Add a a background image for the webpage -->
  </body>
  
